@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('fon_main.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    width: 420px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: floralwhite;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.input-box {
+    position: relative; /* Для правильного позиционирования значков */
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input,
+.input-box select {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 40px;
+    padding: 0 40px; /* Отступы для соответствия с другими полями ввода */
+    color: floralwhite; /* Цвет текста */
+    appearance: none; /* Убираем стандартный стиль */
+    -webkit-appearance: none; /* Убираем стандартный стиль для Safari */
+    -moz-appearance: none; /* Убираем стандартный стиль для Firefox */
+    position: relative; /* Для позиционирования стрелки */
+}
+
+.input-box input::placeholder,
+.input-box select::placeholder {
+    color: floralwhite;
+}
+
+.input-box select {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 40px;
+    padding: 0 40px;
+    color: floralwhite;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.input-box select option {
+    background-color: rgba(50, 50, 50, 0.9);
+    color: floralwhite;
+}
+
+.input-box select:focus {
+    color: floralwhite; /* Установите цвет текста при фокусе */
+    outline: none;
+}
+
+
+.input-box::after {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: floralwhite;
+    pointer-events: none;
+}
+
+.input-box i {
+    position: absolute;
+    left: 15px; /* Позиция значков */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: floralwhite; /* Цвет значков */
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: floralwhite;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: gray;
+    font-weight: 600;
+}
+
+.wrapper .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-link p a {
+    color: floralwhite;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+    color: green;
+}
+
